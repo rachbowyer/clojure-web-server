@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class = "bg"
+<div id="maincontent" class="main" tabindex="-1">
+    <div class="homepage-panel">
+        <div class="logo logo-image">
+            <h1 class="brand text-center">
+                OnTheMarket
+            </h1>
+        </div>
+    </div>
+</div>
+</div>
+<br/>
+<div class="content">
+    <ul>
+    {{#properties}}
+        <li {{#standout}}class="standout"{{/standout}}>
+            <div class="media">
+                <img src="{{pic}}" style="width: 300px; height: auto"></img>
+                <!--style="max-width: 30%; height: auto"-->
+            </div>
+            <div class ="details text">
+                <p class="price">{{price-formatted}}</p>
+                <p>{{description}}</p>
+            </div>
+        </li>
+
+    {{/properties}}
+    </ul>
+</div>
+</body>
+
+</html>
