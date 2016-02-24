@@ -21,4 +21,4 @@ or from the REPL
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © Rachel Bowyer 2016. Licensed under the EPL.

@@ -32,6 +32,3 @@
   (println "OnTheMarket webserver")
   (start-server)
   (async/<!! a-channel))
-
-
-(println "Server loaded")

@@ -51,6 +51,7 @@ li {
     background-color: white;
     display: inline-block;
     left: 0;
+    border: 5px solid #dfdfdf;
 }
 
 div.media {

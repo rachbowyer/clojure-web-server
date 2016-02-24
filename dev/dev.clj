@@ -7,11 +7,14 @@
             [clojurewerkz.elastisch.rest.document :as esd]
             [clojure-web-server.model.properties :refer [connect]]
             [clojure-web-server.database.schema :as schema]
-            [midje.repl :refer :all]))
+            [midje.repl :refer :all]
+            [schema.core :as s]))
 
 ;; Start/stop webserver; reset repl
 
 (defn start []
+  ; Enable validation of schemas
+  (s/set-fn-validation! true)
   ; Automatically run unit tests
   (autotest)
   (server/start-server))

@@ -4,5 +4,5 @@
   {:properties {:desc          {:type "string" :store "yes"}
                 :price         {:type "integer" :store "yes"}
                 :pic           {:type "string" :store "yes"}
-                :exclusive     {:type "boolean" :store "yes"}
+                ;:exclusive     {:type "boolean" :store "yes"}
                 }})

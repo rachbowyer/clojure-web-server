@@ -5,6 +5,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
+  :global-vars {*warn-on-reflection* false
+                *assert* true}
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/core.async "0.2.374"]
@@ -18,7 +20,11 @@
                  [ring/ring-defaults "0.1.5"]
 
                  ; Templating
-                 [stencil "0.5.0"]]
+                 [stencil "0.5.0"]
+
+                 ; Schema
+                 [prismatic/schema "1.0.5"]]
+
 
   ;:plugins [[lein-ring "0.9.7"]]
 
@@ -36,7 +42,7 @@
                              [lein-midje "3.2"]]
 
                    :dependencies [[org.clojure/tools.namespace "0.2.11"]
-                                  [javax.servlet/servlet-api "2.5"]
-                                  [ring/ring-mock "0.3.0"]
+                                  ;[javax.servlet/servlet-api "2.5"]
+                                  ;[ring/ring-mock "0.3.0"]
                                   [midje "1.8.3"]]}
              :uberjar {:aot :all}})
