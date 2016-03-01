@@ -10,4 +10,4 @@ pom.xml.asc
 /.nrepl-port
 .DS_Store
 .idea
-clojure-web-server.iml
+*.iml

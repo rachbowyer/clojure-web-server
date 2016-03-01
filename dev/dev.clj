@@ -15,19 +15,18 @@
 (defn start []
   ; Enable validation of schemas
   (s/set-fn-validation! true)
-  ; Automatically run unit tests
-  (autotest)
   (server/start-server))
 
 (defn stop []
   (server/stop-server))
 
-; Provides a synchronised stop, code reload, start - ensuring the server
-; and code remain in sync
-;(defn reset []
-;  (stop)
-;  ;(set-refresh-dirs "src" "dev")
-;  (refresh-all :after 'dev/start))
+
+(defn reset
+  "Provides a synchronised stop, code reload, start - ensuring the server
+   and code remain in sync"
+  []
+  (stop)
+  (refresh-all :after 'dev/start))
 
 
 ;; Repl utilities
@@ -54,4 +53,5 @@
     (create-mapping-property)))
 
 
-
+; Automatically run unit tests
+(autotest)
