@@ -1,6 +1,6 @@
 (defproject clojure-web-server "0.1.0-SNAPSHOT"
   :description "Demonstration of Clojure web development for QCon2016"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/rachbowyer/clojure-web-server"
 
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -20,10 +20,7 @@
                  [ring/ring-defaults "0.1.5"]
 
                  ; Templating
-                 [stencil "0.5.0"]
-
-                 ; Schema
-                 [prismatic/schema "1.0.5"]]
+                 [stencil "0.5.0"]]
 
 
   ;:plugins [[lein-ring "0.9.7"]]
